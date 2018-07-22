@@ -38,7 +38,7 @@ $("#adding").click(function(){
 	$("#items").append("<li>" + new_task);
 
 
-	$("items")
+	$("input").val("")
 
 
 
