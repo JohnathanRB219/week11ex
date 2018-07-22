@@ -32,14 +32,25 @@ $("#pokemon").hover(function(){
 
 // making the button function clicked adding new list items
 $("#adding").click(function(){
-	// put input into a var
+	// put input into a var 
 	var new_task = $("#info").val();
-	$("#items").append("<li>Some Text</li>");
+	// connect my ul to my input so whatever u type pop ups on the list
+	$("#items").append("<li>" + new_task);
+
+
+	$("items")
+
+
+
+	// connected UL element to li and when button is pressed content of some text pops up
+	// $("#items").append("<li>Some Text</li>");
 	
  
 });
 
 $("#bottom").click(function(){
+	// when button is clicks hides all the content on page
 	$("div").hide();
+	// when button is clicked makes the background color red
 	$("body").css("background-color", "red");
 });
